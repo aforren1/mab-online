@@ -10,7 +10,7 @@ Heroku for hosting, Mailgun for post-task email, and Google Drive for data uploa
 2. Install the Heroku CLI (https://devcenter.heroku.com/articles/heroku-cli)
 3. After restarting terminal, `heroku login`
 4. Change to this directory, and `git init` + `heroku create <name>`, where name is whatever you want to call it
-    - Note the URL (e.g. 'https://foo-bar-baz.herokuapp.com')
+    - Note the URL (e.g. 'https://young-ravine-01355.herokuapp.com/')
     - `git init` allows adding heroku remote
 5. Make github repository (public or private, shouldn't matter)
 6. Add remote (e.g. `git remote add origin https://github.com/aforren1/mab-online.git`)
@@ -23,7 +23,8 @@ Once we get the website running, can open the right webpage with `heroku open`.
  - "runtime.txt" signals that we're using a Python server, and also the version of Python (3.8 in this case)
  - "Procfile" is the command run by Heroku to launch the server (`server:app` refers to "server.py" and "app" within that?)
  - To run the server locally, either run `heroku local` (if on Unix?) or `python server.py` (on Windows)
- 
+ - TODO: use `heroku config:set` to set secrets
+
 
 ## Mailgun setup
 
