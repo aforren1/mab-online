@@ -1,3 +1,5 @@
+Result hosted here: https://young-ravine-01355.herokuapp.com/
+
 Assumes some comfort with git/github, and that some recent version of Python 3 is installed.
 
 Heroku for hosting, Mailgun for post-task email, and Google Drive for data upload.
@@ -20,6 +22,8 @@ Once we get the website running, can open the right webpage with `heroku open`.
  - "requirements.txt" is useful for specifying Python server dependencies, and is automatically run when pushed to Heroku.
  - "runtime.txt" signals that we're using a Python server, and also the version of Python (3.8 in this case)
  - "Procfile" is the command run by Heroku to launch the server (`server:app` refers to "server.py" and "app" within that?)
+ - To run the server locally, either run `heroku local` (if on Unix?) or `python server.py` (on Windows)
+ 
 
 ## Mailgun setup
 

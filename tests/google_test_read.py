@@ -3,7 +3,7 @@ from pydrive2.drive import GoogleDrive
 from pydrive2.auth import GoogleAuth, ServiceAccountCredentials
 
 gauth = GoogleAuth()
-# we don't need to go hog-wild with permissions, see
+# drive is nice for sanity checking, but should use drive.file for the Real Thing
 # https://developers.google.com/drive/api/v3/about-auth
 scope = ['https://www.googleapis.com/auth/drive']
 gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name('google-credentials.json', scope)
